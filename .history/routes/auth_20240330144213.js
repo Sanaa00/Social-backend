@@ -1,0 +1,1 @@
+import  {register}  from "../controllers/auth.js";
