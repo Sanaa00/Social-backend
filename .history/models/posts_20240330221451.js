@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 const postSchema = mongoose.Schema(
      {
 
-          userId:{
+          userID:{
           type: String,
                required: true
           },
@@ -12,7 +12,7 @@ const postSchema = mongoose.Schema(
           type: String,
           required: true
           },
-          lastName:{
+          lasrtName:{
           type: String,
                required: true
           },
@@ -24,13 +24,6 @@ const postSchema = mongoose.Schema(
                type: Map,
                of:Boolean,
           },
-          comments: {
-               type: Array,
-               desfault:[]
-          }
          
-     },{timestamps:true}
+     }
 )
-
-const Post = mongoose.model("Post", postSchema)
-export default Post
